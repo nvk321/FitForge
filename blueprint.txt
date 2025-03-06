@@ -1,5 +1,0 @@
-First page- About the page and login
-After login- Workout page- Everyday of the week
-             Diet plan for each day
-             calender tracking for consistency 
-             
