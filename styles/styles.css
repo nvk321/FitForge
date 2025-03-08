@@ -8,6 +8,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    color: white;
+    background: #1c1c1ce2;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -106,7 +111,7 @@
         width: 10px;
         height: 10px;
         position: absolute;
-        transition: all 1s;
+        transition: all 0.5s;
     }
 
     &:after {
@@ -144,11 +149,152 @@
 
 
 
-.content {
-    /* margin-top: 80px;  */
-    padding: 80px;
+/* Position the video as a full-screen background */
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Make the video cover the entire screen */
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* Optional: Dark overlay to improve text readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)); /* Adjust darkness */
+}
+
+/* Content styling (centered text over video) */
+.video-container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    background: linear-gradient(135deg, #1e1e1e, #333);
-    height: 150vh;
+    z-index: 2;
+}
+
+.video-container .content h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.video-container .content h1 {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.video-container .content p {
+    font-size: 1.5rem;
+} 
+
+
+/* Add Outcomes css */
+/* Add about Us */
+
+/* Footer CSS */
+footer{
+    background: #2a2a2a;
+    padding-top: 25px;
+}
+footer .container{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-content{
+    width: 33.3%;
+}
+footer h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.quick-links{
+    padding: 0;
+    
+}
+.quick-links li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+    text-decoration: none;
+   
+}
+.quick-links li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: var(--thmColor);
+    transition-duration: .5s;
+    
+}
+.quick-links li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: var(--thmColor);
+}
+.social-icons i:hover{
+    color: var(--thmColor);
+}
+.bottom-bar{
+    background: var(--thmColor);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
 }

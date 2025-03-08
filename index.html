@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/logo.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <title>FitForge</title>
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">
@@ -16,17 +19,61 @@
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Workouts</a></li>
-            <li><a href="#">Tracking</a></li>
+            <li><a href="tracker.html">Tracking</a></li>
             <li><a href="#">Diet</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
         <a href="login.html" class="login-btn">Login</a>
     </nav>
-    <div class="content">
-        <h1>Welcome to FitForge</h1>
-        <p>Forge your body like steel!</p>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="videos/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <div class="content">
+                <h1>Welcome to FitForge</h1>
+                <p>Forge your body like steel!</p>
+            </div>
+        </div>
     </div>
+    <div class="outcomes">outcomes</div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>fitforge@gmail.com</p>
+                <p>Phone: +91 1234567890</p>
+                <p>Bangalore, Neekenduku street, 916</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Workouts</a></li>
+                    <li><a href="tracker.html">Tracking</a></li>
+                    <li><a href="#">Diet</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2025 FitForge . All rights reserved</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
