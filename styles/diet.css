@@ -1,16 +1,41 @@
 :root{
-  --thmColor: #dd5426c2;
-}
+    --thmColor: #dd5426c2;
+  }
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+      color: white;
+      background: #1c1c1ce2;
+      padding-top: 80px;
+  }
+
+
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    
+    
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
 
-body{
-    color: white;
-    background: #1c1c1ce2;
+body {
+    background: 
+       black, 
+       url('Images/image.png') no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
 }
 
 .navbar {
@@ -147,73 +172,85 @@ body{
 
 }
 
-
-
-/* Position the video as a full-screen background */
-.video-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* Make the video cover the entire screen */
-.video-container video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-/* Optional: Dark overlay to improve text readability */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)); /* Adjust darkness */
-}
-
-/* Content styling (centered text over video) */
-.video-container .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.dietcontainer {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--thmColor);
+    padding: 2rem;
+    border-radius: 12px;
     text-align: center;
-    color: white;
-    z-index: 2;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 
-.video-container .content h1:hover{
-    -webkit-text-stroke: 2px white;
-    color: transparent;
+/* Week Buttons */
+.week-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.video-container .content h1 {
-    font-size: 100px;
-    font-weight: bold;
+.day-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.video-container .content p {
-    font-size: 1.5rem;
-} 
+.day-btn:hover {
+    background:var(--thmColor);
 
+    transform: scale(1.1);
 
-/* Add Outcomes css */
-/* Add about Us */
+}
 
-/* Footer CSS */
+.day-btn:focus {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Day Container */
+.day {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    display: none;
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+.meal {
+    margin-top: 10px;
+}
+
+.meal h3 {
+    margin-bottom: 5px;
+    color: #ff5733;
+}
+
+.meal img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin: 5px 0;
+    border: 2px solid white;
+}
+
 footer{
     background: #2a2a2a;
     padding-top: 25px;
+    width: 100vw;
 }
-footer .container{
+footer .footcontainer{
     width: 100vw;
     margin: auto;
     display: flex;
