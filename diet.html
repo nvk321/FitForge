@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <title>FitForge</title>
+    <link rel="stylesheet" href="styles/diet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="FitForge Logo">
+                <span>FitForge</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Workouts</a></li>
+            <li><a href="tracker.html">Tracking</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <div class="dietcontainer">
+      <h1>Weekly Food Schedule 🍽️</h1>
+
+      <!-- Week Buttons -->
+      <div class="week-buttons">
+        <button class="day-btn" onclick="showDay('Monday')">Monday</button>
+        <button class="day-btn" onclick="showDay('Tuesday')">Tuesday</button>
+        <button class="day-btn" onclick="showDay('Wednesday')">
+          Wednesday
+        </button>
+        <button class="day-btn" onclick="showDay('Thursday')">Thursday</button>
+        <button class="day-btn" onclick="showDay('Friday')">Friday</button>
+        <button class="day-btn" onclick="showDay('Saturday')">Saturday</button>
+        <button class="day-btn" onclick="showDay('Sunday')">Sunday</button>
+      </div>
+
+      <div id="week">
+        <!-- Monday -->
+        <div class="day" id="Monday">
+          <h2>Monday</h2>
+          <div class="meal">
+            <h3>Breakfast</h3>
+            <img src="Images/Fruit_and_Nut_Oatmeal_.jpg" alt="Breakfast" />
+            <p>Oatmeal with fruits & nuts</p>
+          </div>
+          <div class="meal">
+            <h3>Lunch</h3>
+            <img
+              src="Images/Grown_Strong_Grilled_Chicken_With_Quinoa_Roasted_Vegetables.jpg"
+              alt="Lunch"
+            />
+            <p>Grilled chicken with quinoa & veggies</p>
+          </div>
+          <div class="meal">
+            <h3>Dinner</h3>
+            <img
+              src="Images/sheet-pan-salmon-and-vegetables-5.jpg"
+              alt="Dinner"
+            />
+            <p>Salmon with roasted vegetables</p>
+          </div>
+        </div>
+        <!-- Tuesday -->
+        <div class="day" id="Tuesday">
+          <h2>Tuesday</h2>
+          <div class="meal">
+            <h3>Breakfast</h3>
+            <img
+              src="Images/whole-wheat-pancakes-recipe-2.jpg"
+              alt="Breakfast"
+            />
+            <p>Whole grain pancakes with honey</p>
+          </div>
+          <div class="meal">
+            <h3>Lunch</h3>
+            <img src="Images/avacado and grilled chicken.jpeg" alt="Lunch" />
+            <p>Avocado & grilled chicken salad</p>
+          </div>
+          <div class="meal">
+            <h3>Dinner</h3>
+            <img
+              src="images/italian-vegetable-soup-with-cheese-bread.jpg"
+              alt="Dinner"
+            />
+            <p>Vegetable soup with garlic bread</p>
+          </div>
+        </div>
+
+        <!-- Wednesday -->
+        <div class="day" id="Wednesday">
+          <h2>Wednesday</h2>
+          <div class="meal">
+            <h3>Breakfast</h3>
+            <img
+              src="Images/Banana-Spinach-Smoothie-Featured.jpg"
+              alt="Breakfast"
+            />
+            <p>Green smoothie with spinach & banana</p>
+          </div>
+          <div class="meal">
+            <h3>Lunch</h3>
+            <img src="Images/images.jpeg" alt="Lunch" />
+            <p>Turkey sandwich with whole grain bread</p>
+          </div>
+          <div class="meal">
+            <h3>Dinner</h3>
+            <img
+              src="Images/whole-wheat-pasta-with-marinara-sauce.jpg"
+              alt="Dinner"
+            />
+            <p>Whole wheat pasta with marinara sauce</p>
+          </div>
+        </div>
+
+        <!-- Thursday -->
+        <div class="day" id="Thursday">
+          <h2>Thursday</h2>
+          <div class="meal">
+            <h3>Breakfast</h3>
+            <img src="Images/Best-Egg-Toast-SQ-1.jpg" alt="Breakfast" />
+            <p>Scrambled eggs with toast</p>
+          </div>
+          <div class="meal">
+            <h3>Lunch</h3>
+            <img
+              src="Images/buddha bowl with chikpeas and veggies.jpeg"
+              alt="Lunch"
+            />
+            <p>Buddha bowl with chickpeas and veggies</p>
+          </div>
+          <div class="meal">
+            <h3>Dinner</h3>
+            <img src="Images/grilled fish with asparagus.jpeg" alt="Dinner" />
+            <p>Grilled fish with steamed asparagus</p>
+          </div>
+        </div>
+        <!-- Friday -->
+        <div class="day" id="Friday">
+          <h2>Friday</h2>
+          <div class="meal">
+            <h3>Breakfast</h3>
+            <img
+              src="Images/Greek-Yogurt-drizzled-with-Honey-and-Walnuts-Yiaourti-me-meli.jpg"
+              alt="Breakfast"
+            />
+            <p>Greek yogurt with honey & almonds</p>
+          </div>
+          <div class="meal">
+            <h3>Lunch</h3>
+            <img src="images/pizza.jpeg" alt="Lunch" />
+            <p>Veggie-loaded pizza on whole wheat crust</p>
+          </div>
+          <div class="meal">
+            <h3>Dinner</h3>
+            <img
+              src="images/chicken-and-broccoli-stir-fry-6-2.jpg"
+              alt="Dinner"
+            />
+            <p>Chicken stir-fry with broccoli</p>
+          </div>
+        </div>
+
+        <!-- Saturday -->
+        <div class="day" id="Saturday">
+          <h2>Saturday</h2>
+          <div class="meal">
+            <h3>Breakfast</h3>
+            <img src="images/croissant.jpeg" alt="Breakfast" />
+            <p>Croissant with fresh berries</p>
+          </div>
+          <div class="meal">
+            <h3>Lunch</h3>
+            <img
+              src="images/easy-vegan-black-bean-veggie-burgers.jpg"
+              alt="Lunch"
+            />
+            <p>Homemade veggie burger</p>
+          </div>
+          <div class="meal">
+            <h3>Dinner</h3>
+            <img
+              src="images/Spicy-Chickpea-and-Cauliflower-Curry.jpg"
+              alt="Dinner"
+            />
+            <p>Spicy chickpea curry with rice</p>
+          </div>
+        </div>
+
+        <!--Sunday-->
+        <div class="day" id="Sunday">
+          <h2>Sunday</h2>
+          <div class="meal">
+            <h3>Breakfast</h3>
+            <img src="images/bagel.jpeg" alt="Breakfast" />
+            <p>Bagel with cream cheese & smoked salmon</p>
+          </div>
+          <div class="meal">
+            <h3>Lunch</h3>
+            <img src="images/italian pasta.jpeg" alt="Lunch" />
+            <p>Italian pasta salad with olives</p>
+          </div>
+          <div class="meal">
+            <h3>Dinner</h3>
+            <img
+              src="images/grilled steak with mashed potatoes.jpeg"
+              alt="Dinner"
+            />
+            <p>Grilled steak with mashed potatoes</p>
+          </div>
+        </div>
+        <!-- Other days follow the same format -->
+      </div>
+    </div>
+    <footer>
+        <div class="footcontainer">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>fitforge@gmail.com</p>
+                <p>Phone: +91 1234567890</p>
+                <p>Bangalore, Neekenduku street, 916</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Workouts</a></li>
+                    <li><a href="tracker.html">Tracking</a></li>
+                    <li><a href="diet.html">Diet</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2025 FitForge . All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+      function showDay(day) {
+        let days = document.querySelectorAll(".day");
+        days.forEach((d) => (d.style.display = "none"));
+
+        document.getElementById(day).style.display = "block";
+      }
+
+      // Show Monday by default
+      document.addEventListener("DOMContentLoaded", () => showDay("Monday"));
+    </script>
+  </body>
+</html>
