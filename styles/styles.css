@@ -1,24 +1,19 @@
 :root{
-  --thmColor: #dd5426c2;
+    --thmColor: #dd5426c2;
+    --lightthm: #ea7c58c2;
 }
-
+  
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 20px;
+      scroll-behavior: smooth;
+      scroll-padding-top: 20px;
 }
-
+  
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
 }
-
-body{
-    color: white;
-    background: #1c1c1ce2;
-}
-
 .navbar {
     position: fixed;
     top: 0;
@@ -154,6 +149,11 @@ body{
 }
 
 
+
+body{
+    color: white;
+    background: #1c1c1ce2;
+}
 
 /* Position the video as a full-screen background */
 .video-container {
