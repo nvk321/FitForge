@@ -311,6 +311,7 @@ header p {
 
 /* Footer CSS */
 footer{
+    width: 100vw;
     background: #2a2a2a;
     padding-top: 25px;
 }
