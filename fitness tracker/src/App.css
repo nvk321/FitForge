@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.MuiPaper-root {
+  background-color: white;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.MuiPaper-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.component-title {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.component-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%);
+  border-radius: 3px;
+}
+
+.value-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 1.5rem 0;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.unit {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-left: 0.5rem;
+  -webkit-text-fill-color: #7f8c8d;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.MuiButton-root {
+  text-transform: none;
+  border-radius: 20px;
+  padding: 8px 24px;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.MuiButton-root:hover {
+  transform: translateY(-2px);
+}
+
+.MuiLinearProgress-root {
+  border-radius: 10px !important;
+  height: 8px !important;
+  background-color: rgba(33, 150, 243, 0.1) !important;
+}
+
+.MuiLinearProgress-bar {
+  background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%) !important;
+}
+
+.MuiCircularProgress-root {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Form controls */
+.MuiTextField-root {
+  background: white;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.MuiTextField-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2196F3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1769aa;
+} 
