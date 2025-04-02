@@ -1,13 +1,12 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
-import { Link } from "react-router-dom";
 import logo from "../images/logo.png"; // Import logo
 
 const Navbar = () => {
   return (
     <AppBar position="fixed" sx={{ background: "rgba(0, 0, 0, 0.7)", backdropFilter: "blur(10px)" }}>
       <Toolbar sx={{ display: "flex", justifyContent: "space-between", paddingX: "5%" }}>
-        
+
         {/* Logo */}
         <Box display="flex" alignItems="center">
           <Link to="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", color: "white" }}>
@@ -20,11 +19,20 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <Box sx={{ display: "flex", gap: "50px" }}>
-          <Button color="inherit" component={Link} to="/">Home</Button>
-          <Button color="inherit" component={Link} to="/workouts">Workouts</Button>
-          <Button color="inherit" component={Link} to="/tracker">Tracking</Button>
-          <Button color="inherit" component={Link} to="/diet">Diet</Button>
-          <Button color="inherit" component={Link} to="#about">About Us</Button>
+          <Button
+            color="inherit"
+            component="a"
+            href="file:///D:/Projects/FitForge/index.html"
+            target="_blank"
+          >
+            Home
+          </Button>
+
+          <Button color="inherit" component="a" href="/workouts.html">Workouts</Button>
+          <Button color="inherit" component="a" href="/tracker.html">Tracking</Button>
+          <Button color="inherit" component="a" href="/diet.html">Diet</Button>
+          <Button color="inherit" component="a" href="#about">About Us</Button>
+
         </Box>
 
         {/* Login Button */}
@@ -52,7 +60,7 @@ const Navbar = () => {
         </Button>
 
       </Toolbar>
-    </AppBar>
+    </AppBar >
   );
 };
 

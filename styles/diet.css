@@ -213,6 +213,7 @@ body {
 
 .day-btn:focus {
     background: rgba(255, 255, 255, 0.6);
+    background:var(--thmColor);
 }
 
 /* Day Container */

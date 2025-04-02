@@ -16,7 +16,14 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "name": "FitForge",
+      "short_name": "FitForge",
+      "start_url": ".",
+      "display": "standalone"
     }
+    
   ],
   "start_url": ".",
   "display": "standalone",

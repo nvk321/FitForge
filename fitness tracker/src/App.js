@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid, Paper, Typography, Box, AppBar, Toolbar, useTheme, useMediaQuery } from '@mui/material';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 import Navbar from "./components/Navbar"; // Import Navbar
 import SpO2Monitor from './components/SpO2Monitor';
