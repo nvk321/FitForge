@@ -42,10 +42,10 @@
     <!-- Content -->
     
     <div class="outcomes">
-        <h2>Our Website Contains</h2>
+        <h2>Why You'll Love Us</h2>
         
             <div class="outcomes-container">
-                <div class="content-box">
+                <div class="content-box hidden-box slide-right-on-scroll">
                     <img src="images/workout_img.webp" atl="workouts image">
                     <h3><b>Workouts</b></h3>
                     <p>Custom workouts to help you stay fit and strong.</p>
@@ -54,7 +54,7 @@
 
                 </div>
 
-                <div class="content-box">
+                <div class="content-box hidden-box slide-left-on-scroll">
                     <img src="images/tracker_image.jpg" alt="tracker image">
                     <h3><b>Tracker</b></h3>                   
                     <p>Track your fitness progress and stay motivated!</p>
@@ -63,7 +63,7 @@
                 </div>
             
                 
-                <div class="content-box">
+                <div class="content-box hidden-box slide-right-on-scroll">
                     <img src="images/diet_img.jpg" alt="diet image">
                     <h3><b>Diet</b></h3>
                     <p>Personalized meal plans based on your routine and goals.</p>
@@ -127,6 +127,34 @@
             <p>&copy; 2025 FitForge . All rights reserved</p>
         </div>
     </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            const el = entry.target;
+            const isLeft = el.classList.contains('slide-left-on-scroll');
+            const isRight = el.classList.contains('slide-right-on-scroll');
+      
+            if (entry.isIntersecting) {
+              el.classList.remove('hidden-box'); // Reveal it
+              if (isLeft) el.classList.add('slide-left');
+              if (isRight) el.classList.add('slide-right');
+            } else {
+              // Re-hide when out of view
+              el.classList.add('hidden-box');
+              el.classList.remove('slide-left');
+              el.classList.remove('slide-right');
+            }
+          });
+        }, {
+          threshold: 0.2
+        });
+      
+        document.querySelectorAll('.slide-left-on-scroll, .slide-right-on-scroll')
+          .forEach(el => observer.observe(el));
+      </script>
+      
+      
+      
 
 </body>
 
