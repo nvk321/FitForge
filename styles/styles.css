@@ -175,7 +175,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)); /* Adjust darkness */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)); /* Adjust darkness */
 }
 
 /* Content styling (centered text over video) */
@@ -202,6 +202,31 @@ body{
 .video-container .content p {
     font-size: 1.5rem;
 } 
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    
+    z-index: 1;
+
+    
+    mask-image: radial-gradient(circle, black 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.2) 100%);
+    -webkit-mask-image: radial-gradient(circle, black 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.2) 100%);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 0% 0%;
+    animation: revealCircle 5s ease-out forwards;
+}
+
+/* Animation remains the same */
+@keyframes revealCircle {
+    to {
+        mask-size: 250% 250%;
+        -webkit-mask-size: 250% 250%;
+    }
+}
 
 
 /* Add Outcomes css */
@@ -217,7 +242,7 @@ body{
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .content-box a:hover {
@@ -230,6 +255,7 @@ body{
     padding-top: 20px;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 42px;
 }
 .outcomes-container{
     
